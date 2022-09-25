@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:white;
+    background-size:cover;
+    background: #000;
+}
+header{
+    background-image: url("images/URRH5427.JPG");
+}
+.box{ 
+    width: 90px;
+    float: left;
+    background: url("img/URRH5427.JPG");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid none;
+}
+.box ul li{
+    width: 120px;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+.mainmenu
+.mainmenu a
+.mainmenu a:hover
+.mainmenu img{
+position: fixed;
+z-index: -1;
+top: 0px; left:0px; width: 100%; height: 100vh;
+opacity: 0.9;
+/*object-fit:cover;*/
+transition: all ease 0.5s;
+}
+.wd{
+width: 300px;
+height: 539px;
+background-color: black;
+opacity: 0.8;
+padding: 55px;
+}
+.wd h1{
+text-align: center;
+text-transform: uppercase;
+font-weight: 300px;
+font-size: 20;
+color: blue;
+}
+.wd h4{
+text-align: center;
+color: darkgray;
+font-weight: 300px;
+color: yellow;
+font-size: medium;
+}
+.wd h2{
+text-align: center;
+text-transform: capitalize;
+font-weight: normal;
+font-size: 16;
+margin: 40px auto;
+}
+.wd h2 b{
+color: red;
+}
+.wd h3 span{
+color: red;
+}
+.opt form , input[type="button"]{
+background-color: black;
+color: white;
+/*padding:10px;*/
+margin:-14px auto;
+padding-left: 50px;
+text-align: center;
+font-size: 16px;
+}
+form, input[type="button"] {
+animation: glowing 300ms infinite;
+font-weight: 500%;
+}
+@keyframes glowing {
+0% {
+    background-color: red;
+}
+50% {
+    background-color: orange;
+}
+100% {
+    background-color: blue;
+}
+}
+.navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+}
+
+.background {
+background: black;
+background-blend-mode: darken;
+background-size: cover;
+}
+
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo img {
+width: 35px;
+border-radius: 50px;
+padding-left: 0;
+margin-right: 50px;
+}
+
+.nav-list li {
+list-style: none;
+padding: 16px 20px;
+}
+
+.nav-list a {
+text-decoration: none;
+color: white;
+}
+
+.nav-list a :hover {
+color: grey;
+}
+
+.rightnav {
+width: 30%;
+text-align: right;
+}
+#mywork{
+    margin-top: 120px;
+}
+#mywork h3 img{
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    flex: 50px;
+}
+
+/* -----------contact-------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p img{
+    color: #ff004f;
+    margin-right: 15px;
+    width: 17px;
+}
+.social-icons{
+    margin-top: 15px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: translate 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.tel{
+    text-decoration: none;
+}
+.sub-title{
+    margin-top: 120px;
+}
+div a span{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+div a span:hover{
+    background: #ff004f;
+}
+.bck{
+    text-decoration: none;
+}
+
+/* --------css for small screen---------- */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    body{
+       background: #000;
+    }
+    header{
+        background-image: url(images/BTBG.jpg);
+    }
+    .nav-list {
+        width: 200%;
+    }
+    .nav-list li {
+list-style: none;
+padding: 16px 20px;
+padding-left: 0;
+    }
+    .logo img {
+        width: 25px;
+        border-radius: 50px;
+        padding-left: 0;
+        margin-right: 50px;
+        }
+}

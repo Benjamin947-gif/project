@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My First Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jfif" class="logo" style="margin-top: 20px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="images/close.png" class="fas" onclick="closemenu()" width="35px">
+                </ul>
+                <img src="images/menu.png" style="margin-top: 0;" class="fas" onclick="openmenu()" width="35px">
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Benjamin</span> <br> Amoako From Ghana</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum dignissimos praesentium a delectus ex est, consectetur corrupti quis. Ea id, fuga aliquid reprehenderit neque laborum corrupti molestiae ducimus nemo.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App DevelopmentUI/UX</span><br>Building Basic Softwares</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>UI/IX Design Trainging at UCC</li>
+                            <li><span>2020 - 2021</span><br>Team lead @ UCC</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive UPSHS</li>
+                            <li><span>2016 - 2017</span><br>Internship at FredBeck Computers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>University of Cape Coast</li>
+                            <li><span>2020</span><br>University Practice Senior High School</li>
+                            <li><span>2017</span><br>Godsent School Complex</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/hairicon.jpg">
+                    <h2>Haircut Design</h2>
+                    <p>This site connects you to some wonderful works of a professional barber.If you are interested in wonderful hair cut............</p>
+                    <a style="color: blue;" href="indexx.html">Learn more</a>
+                </div>
+                <div>
+                    <img src="images/foodicon.png">
+                    <h2>Cooking Service</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                    <a style="color: blue;" href="kings.html">Learn more</a>
+                </div>
+                <div>
+                    <img src="images/App.jfif">
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                    <a style="color: blue;" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/user2.jpg" width="400px" height="400px">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><img src="images/link.jfif"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/user1.jpg" width="400px" height="400px">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><img src="images/link.jfif"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/user3.jpg" width="400px" height="400px">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><img src="images/link.jfif"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="images/send.png"><a href="mailto:amoakob947@gmail.com" class="email">Click to Email Me</a></p>
+                    <p><img src="images/phone1.jfif"> <a href="tel:+233540871385" class="email">Click to Contact Me</a></p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.png" width="20px"></a>
+                        <a href="#"><img src="images/twiter.png" width="24px"></a>
+                        <a href="#"><img src="images/instagram.jfif" width="24px"></a>
+                        <a href="#"><img src="images/linkedin.png" width="20px"></a>
+                    </div>
+                    <a href="images/AFRYIE.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright (C) Benjamin. Made with <i class="fas fa-heart"><img src="images/heart.png" width="15px";></i> by Benjero Graphics</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw48vX8VZvpjKPg09BeJ00IMBSkZqERVmBvq-JKO1jlm1Im_PvaC6dddvm4HRArb6Ci/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
